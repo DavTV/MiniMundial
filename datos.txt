@@ -1,0 +1,9 @@
+Carrera: Diseño Multimedial
+Materia: Diseño y Programación Web 1
+Cuatrimestre: 3er agosto - diciembre
+Año: 2022
+Turno: mañana
+Comisión: DMM3AH
+Alumnas: Johana Brouwer, Celina Devida, Maria del Huerto Marino
+Docente: Omar Toyos
+Carácter de entrega: Trabajo Práctico

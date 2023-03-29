@@ -1,0 +1,119 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+
+	<title>Mini Mundial</title>
+    <link rel="stylesheet" href="css/main.css" />
+    
+
+</head>
+
+<body>
+<main class="container ">
+    <div class="paises">
+        <div class="mb">
+            <div >
+                <!-- <p>Elige un país</p> -->
+                <summary >
+                    <strong>Elige un país</strong> 
+
+                </summary >
+                <details id="primerPais" >
+                    
+                </details>
+
+                <!-- <option value="">hola</option>
+                <option value="">hola</option> -->
+                </div>
+        </div>
+        <div class="mb">
+            <div >
+                <!-- <p>Elige un país</p> -->
+                <summary >
+                   <strong>Elige un país</strong> 
+                </summary >
+                <details id="segundoPais" >
+                </details>
+
+                <!-- <option value="">hola</option>
+                <option value="">hola</option> -->
+                </div>
+        </div>
+    </div>
+    <p><strong>Paises Elegidos</strong></p>
+    <div class="paisesSeleccionados">
+        <div class="pais" id="pais1">
+
+        </div>
+        <strong><img src='imagenes/vs.png' alt="vs" class="imgVs"/></strong>
+        <div class="pais" id="pais2">
+
+        </div>
+        
+    </div>
+    <div class="container">
+        <p ><strong id="apuesta"></strong></p>
+        <p ><strong id="fin"></strong></p>
+        <button class="btn" id="btnModal">Apostar a tu equipo</button>
+        <button class="btn" id="iniciar" >Iniciar</button>
+        <div class="estadio h-100">
+        <div class="contadorTime">
+            
+            <!-- <div class="contador mx">
+                <span><strong id="puntaje1"> alemania:  0</strong></span>
+                <span><strong id="puntaje2">brasil: 0</strong></span>
+                <small>Puntaje</small>
+            </div> -->
+            <div class="contador">
+                <p><strong id="tiempo">0 sg</strong></p>
+                <small>tiempo</small>
+            </div>
+        </div>
+        <div class="controles">
+            <div class="pantalla" id="pantalla">
+
+            </div>
+            <div class="goles pantalla h-100" id="goles">
+                <strong>Reporte de goles.</strong>
+            </div>
+        </div>
+        <div class="contenedorPase">
+            <button class="btn" id="pase">Generar Pase ⚽</button>
+            <button class="btn none" id="reinicio">Reiniciar ⚽</button>
+
+        </div>
+        </div>
+    </div>
+    <!-- <button class="btn" id="back">« Atras</button> -->
+</main>
+<!-- modal -->
+<div class="modalApuesta none" id="modalContenedor">
+    <form class="modal" id="modal">
+        <h2>Elige a tu equipo ganador</h2>
+        <img src="imagenes/world-cup-2022-logo.svg" alt="copaQatar" class="logoQatar">
+
+        <select  id="equipoApostado">
+            <option value="">Elige Equipo</option>
+            <option value="" id="opccionPais1"></option>
+            <option value="" id="opccionPais2"></option>
+
+        </select>
+        <label for=""><strong>Castigo</strong></label>
+        <select  id="castigo">
+            <!-- <option value="">Elige Castigo</option> -->
+            <option value="30 flexiones de brazos"> 30 flexiones de brazos</option>
+            <option value="Paga la bebida"> Paga la bebida</option>
+            <option value="Una vuelta a la manzana corriendo"> Una vuelta a la manzana corriendo</option>
+            <option value="Paga la comida"> Paga la comida</option>
+        </select>
+        <small id="mensajeError"></small>
+        <button class="btn" >Apostar</button>
+        <button class="btn" id="btnCerrarModal">Cancelar</button>
+    </form>
+</div>
+</div>
+<script src="plugin/jquery.min.js"></script>
+<script src="plugin/main.js"></script>
+<script src="./plugin/index.js"></script>
+</body>
+</html>

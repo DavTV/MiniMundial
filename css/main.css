@@ -1,0 +1,252 @@
+:root{
+    /* creación de variables con colores */
+    /* --c1: #b6b91d;
+    --c2: #b85b00; */
+    --c1: #9A1032;
+    --c2:#BBB8B5;
+    --c3:#c7c8ff;
+    --c4: #f4f4f4;
+}
+
+body{
+    background-image: url("https://images8.alphacoders.com/128/1286559.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+    background-color: var(--c4);
+    color: var(--c1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    /* border: #9A1032 1px solid; */
+    display: flex;
+    align-items: center;
+
+}
+
+/* Inicio */
+
+.container{
+    /* background-color: var(--c2); */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    /* border: #1d1732 1px solid; */
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
+    background-color: rgba(255, 255, 255, .70); 
+    position: relative;
+}
+.banderas{
+    animation: zoom 1s infinite alternate;
+}
+.boton{
+    text-align: center;
+}
+.btn{
+    /* -webkit-transition-duration: 0.4s; Safari */
+    transition-duration: 0.5s;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 2px solid var(--c1);
+    animation: zoom 1s infinite alternate;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+.h-100{
+    height: initial !important;
+}
+
+.btn:hover {
+    background-color: var(--c1); /* Green */
+    color: white;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.imgBanderas{
+    margin:  0 5px;
+}
+.logoQatar{
+    max-width: 300px;
+}
+
+/* Reglas */
+.grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1,1fr);
+    /* border: 1px solid;    */
+    justify-content: space-between;
+    margin: auto;
+}
+@media (min-width: 1200px) {
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.reglas{
+    list-style: none;
+    font-weight: bold;
+}
+.reglas li{
+    margin: 10px 0;
+}
+.balonQatar{
+    max-width:200px;
+    animation: zoom 1s infinite alternate;
+}
+.alumnas{
+    display: flex;
+    flex-direction: column;
+}
+.alumnas img{
+    width: 100px;
+    height: 100px;
+    margin: 5px 10px;
+    border: 2px solid var(--c1);
+    object-fit: cover;
+    object-position: center;
+}
+.flex{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+/* MODIFICAR BODY */
+
+.hv85{
+    height: 85vh !important;
+}
+
+
+/* Juego */
+
+.paises{
+    border: 2px solid var(--c1);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    /* flex-direction: column; */
+}
+.paisesSeleccionados{
+    display: flex;
+    justify-content: space-between;
+}
+summary{
+    min-width: 300px;
+
+}
+details{
+    border: 1px solid var(--c1);
+    margin: 5px 0;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    max-height: 50vh;
+    overflow-y: auto;
+    cursor: pointer;
+}
+.mb{
+    margin: 5px;
+}
+.option{
+    padding: 5px;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: var(--c1);
+    color: var(--c4);
+}
+.paisVersus{
+    min-width: 60px;
+    /* object-fit: cover; */
+}
+.imgVs{
+    max-width: 100px;
+}
+.paisesSeleccionados{
+    margin: 10px 0;
+}
+.estadio{
+    color: var(--c4);
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-campo-futbol-estilo-degradado_23-2148995842.jpg?w=2000");
+    background-size: cover;
+    padding: 5px;
+    margin: 10px 0;
+    height: 45vh;
+}
+
+.contadorTime{
+    display:flex;
+    justify-content: end;
+}
+.contador{
+    width: 50px;
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--c1);
+}
+
+.mx{
+    width: 100px;
+}
+/* Modal Apuesta */
+.modalApuesta{
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.modal{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color:var(--c4);
+    width: 400px;
+    /* height: 400px; */
+    padding: 20px;
+}
+.modal select{
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    border: var(--c1) 2px solid;
+}
+.none{
+    display: none;
+}
+.pantalla{
+    border: 1px solid;
+    height: 70px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, .70); 
+    border-radius: 5px ;
+    min-width: 200px;
+    color: var(--c1);
+    padding: 5px;
+}
+.controles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenedorPase{
+    margin: 10px 0;
+}
